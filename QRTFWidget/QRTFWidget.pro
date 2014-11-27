@@ -22,4 +22,4 @@ HEADERS  += dialog.h \
 FORMS    += dialog.ui
 
 INCLUDEPATH += ../include
-LIBS += ../lib/macos/librtf.a
+LIBS += -L../lib/ -lrtfcpp

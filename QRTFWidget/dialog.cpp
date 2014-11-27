@@ -25,6 +25,11 @@ void Dialog::on_pushButton_clicked()
     QString filename = QFileDialog::getOpenFileName(this, tr("Open file"), ".", tr("Rich Text Format (*.rtf)"));
     qDebug() << "file is " << filename;
 
+    if(filename.isNull())
+    {
+        return;
+    }
+
     //process the document
     try
     {

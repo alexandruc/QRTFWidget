@@ -55,6 +55,7 @@ void RTFParser::print_forced_space( )
 int  RTFParser::print_unicode( int c)
 {
     qDebug() << __FUNCTION__ << ": " << c ;
+    return 0;
 }
 
 void RTFParser::hyperlink( string str )
