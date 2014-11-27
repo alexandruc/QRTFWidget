@@ -13,8 +13,13 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        dialog.cpp
+        dialog.cpp \
+    rtfparser.cpp
 
-HEADERS  += dialog.h
+HEADERS  += dialog.h \
+    rtfparser.h
 
 FORMS    += dialog.ui
+
+INCLUDEPATH += ../include
+LIBS += ../lib/macos/librtf.a
